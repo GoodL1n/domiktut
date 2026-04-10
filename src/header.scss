@@ -1,0 +1,28 @@
+.header {
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 60px;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__phone {
+    display: flex;
+    gap: 5px;
+    color: #ffffff;
+
+    &-number {
+      font-size: 18px;
+      letter-spacing: 0%;
+      vertical-align: middle;
+      color: #ffffff;
+    }
+  }
+}
