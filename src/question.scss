@@ -1,0 +1,92 @@
+.questions {
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 40%;
+  }
+
+  &__title {
+    font-family: Montserrat Alternates;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -3px;
+    vertical-align: middle;
+    color: #38404c;
+  }
+
+  &__subtitle {
+    font-family: Montserrat Alternates;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 29.25px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #545c69;
+  }
+
+  &__list {
+    flex: 1;
+  }
+}
+
+.question {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  gap: 32px;
+
+  &__number {
+    font-family: Plus Jakarta Sans;
+    font-weight: 200;
+    font-style: Light;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -3px;
+    vertical-align: middle;
+    color: #ff7850b0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__answer {
+    display: none;
+  }
+
+  &__container:has(&__icon:hover) &__answer {
+    display: flex;
+  }
+
+  &__title {
+    font-family: Montserrat Alternates;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    vertical-align: middle;
+    color: #38404c;
+  }
+
+  &__answer {
+    font-family: Montserrat Alternates;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 29.25px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+  }
+}
