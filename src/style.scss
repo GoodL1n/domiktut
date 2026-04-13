@@ -123,12 +123,15 @@ body {
       rgba(95, 95, 95, 0.2) 94.9%,
       rgba(102, 102, 102, 0) 100%
     ),
-    url("./assets/background.jpg");
+    url("./assets/backrgound.jpg");
   background-color: #ffffff;
   background-repeat: no-repeat, no-repeat;
   background-position: top, top;
   background-size: auto, auto;
-  height: 950px;
+  height: 950px; // потом убрать
+  margin: 0 auto;
+  // max-height: 950px;
+  // height: 100%;
 }
 
 .container {
@@ -137,10 +140,11 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    margin: auto;
+    margin: 24px 16px;
   }
 
   .page-intro {
-    height: 100%;
+    // height: auto;
+    min-height: 520px;
   }
 }

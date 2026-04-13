@@ -13,8 +13,15 @@
     gap: 20px;
   }
 
+  &__social{
+    &-link{
+
+    }
+  }
+
   &__phone {
     display: flex;
+    align-items: center;
     gap: 5px;
     color: #ffffff;
 
@@ -23,6 +30,48 @@
       letter-spacing: 0%;
       vertical-align: middle;
       color: #ffffff;
+    }
+
+    &-link {
+      display: none;
+    }
+
+    &-icon{
+      height: 20px;
+    }
+  }
+
+  &__hamburger-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__nav {
+      padding: 40px 40px 0 40px;
+    }
+
+    &__socials {
+      display: none;
+    }
+
+    &__logo {
+      width: 190px;
+    }
+
+    &__phone {
+      display: none;
+
+      &-link {
+        display: block;
+      }
+    }
+
+    &__hamburger {
+      &-btn {
+        display: flex;
+      }
     }
   }
 }
