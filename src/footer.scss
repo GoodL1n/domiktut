@@ -5,6 +5,8 @@
   padding: 48px 24px;
   gap: 32px;
   background: #121a25;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 
   &__links {
     display: flex;
@@ -23,6 +25,19 @@
       vertical-align: middle;
       text-transform: uppercase;
       color: #a5abb8;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__links {
+    }
+
+    &__link {
+      &-text {
+        font-size: 10px;
+      }
     }
   }
 }

@@ -141,7 +141,7 @@ body {
   gap: 22px;
   flex-direction: column;
 
-  &.questions{
+  &.questions {
     flex-direction: row;
     gap: 64px;
   }
@@ -149,7 +149,11 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    // margin: 24px 16px;
+    max-width: 350px;
+    &.questions {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
 
   .page-intro {

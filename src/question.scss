@@ -90,3 +90,50 @@
     vertical-align: middle;
   }
 }
+
+@media (max-width: 768px) {
+  .questions {
+    &__header {
+      gap: 10px;
+      width: 100%;
+    }
+
+    &__title {
+      font-size: 40px;
+      line-height: 30px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+
+  .question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px 10px 0;
+    gap: 0;
+
+    &__container {
+      gap: 5px;
+      width: 80%;
+    }
+
+    &__number {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__answer {
+      font-size: 15px;
+      line-height: 15px;
+    }
+  }
+}
