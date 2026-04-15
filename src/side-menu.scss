@@ -4,7 +4,7 @@
   top: 0;
   display: block;
   justify-content: center;
-  z-index: 1001;
+  z-index: 1;
   background: #121a25;
   transition: all 0.5s;
   width: 100%;
@@ -36,6 +36,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 80%;
     border-radius: 4px;
     padding: 10px;
     font-family: "Montserrat";

@@ -3,6 +3,7 @@
   flex-direction: row;
   margin: 40px auto;
   max-width: 1200px;
+  gap: 100px;
 
   &__column {
     display: flex;
@@ -139,6 +140,10 @@
     font-size: 12px;
     line-height: 15px;
     border-radius: 4px;
+
+    &-gray{
+      display: none;
+    }
   }
 
   .preview__benefits {
@@ -172,7 +177,7 @@
       height: 28px;
     }
 
-    &.medium{
+    &.medium {
       width: 22px;
       height: 22px;
     }

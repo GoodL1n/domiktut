@@ -72,10 +72,10 @@
             Найдите идеальный вариант сами или предоставьте это нам!
           </h2>
           <div class="preview__actions">
-            <button class="preview__btn preview__btn-orange">
+            <button id="btn-request" class="preview__btn preview__btn-orange">
               Заявка на подбор
             </button>
-            <button class="preview__btn preview__btn-gray">
+            <button id="btn-request-coop" class="preview__btn preview__btn-gray">
               Сотрудничество
             </button>
           </div>
@@ -135,7 +135,8 @@
           <div class="about__blocks-rows">
             <div class="about__block third bg-gray">
               <div class="about__block-header">
-                <img class="about__block-icon" src="./src/assets/icons/kitchen_services.svg" alt="" width="22" height="30" />
+                <img class="about__block-icon" src="./src/assets/icons/kitchen_services.svg" alt="" width="22"
+                  height="30" />
                 <div>
                   <span class="about__block-title light orange">Собственный кейтеринг</span>
                 </div>
@@ -259,7 +260,7 @@
       <button class="side-menu__btn-close"><img height="23" width="23" src="./src/assets/icons/close.svg"
           alt="Close side menu" /></button>
       <nav class="side-menu__nav">
-        <button class="side-menu__btn">
+        <button id="btn-request-coop-2" class="side-menu__btn">
           Сотрудничество
         </button>
         <ul class="side-menu__socials">
@@ -301,6 +302,101 @@
               width="20" src="./src/assets/icons/phone.svg" alt="Phone" /> +7 927 240-09-54</a>
         </div>
       </nav>
+    </div>
+  </div>
+
+  <div id="form-request" class="form-request">
+    <div class="form-request__container">
+      <button id="form-request__btn-close" class="form-request__btn-close">
+        <img height="23" width="23" src="./src/assets/icons/close.svg" alt="Close side menu" />
+      </button>
+      <div class="form-request__header">
+        <h3 class="form-request__title">Заявка на бронирование</h3>
+        <div class="form-request__border"></div>
+      </div>
+      <form class="form-request__form">
+        <div class="form-request__row">
+          <label class="form-request__label">
+            Дата заезда
+            <input class="form-request__input" type="date">
+          </label>
+          <label class="form-request__label">
+            Дата выезда
+            <input class="form-request__input" type="date">
+          </label>
+        </div>
+        <div class="form-request__row">
+          <label class="form-request__label">
+            Имя
+            <input class="form-request__input" type="text" placeholder="Андрей">
+          </label>
+          <label class="form-request__label">
+            Телефон
+            <input class="form-request__input" type="tel" placeholder="+7 (900) 000-00-00">
+          </label>
+        </div>
+        <div class="form-request__row">
+          <label class="form-request__label">
+            Соц.сети(телеграм)
+            <input class="form-request__input" type="text" placeholder="@username">
+          </label>
+          <label class="form-request__label">
+            Кол-во человек
+            <input class="form-request__input" type="number" placeholder="1">
+          </label>
+        </div>
+        <label class="form-request__label">
+          Доп. критерии
+          <textarea class="form-request__input size" type="text"
+            placeholder="Ваши пожелания (бассейн, бильярд, кейтеринг и тд)"></textarea>
+        </label>
+        <button class="form-request__btn">Отправить запрос</button>
+        <div class="form-request__footer">
+          <span class="form-request__text">Нажимая кнопку, вы соглашаетесь с политикой
+            конфиденциальности.</span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="form-coop" class="form-request">
+    <div class="form-request__container row">
+      <button id="form-coop__btn-close" class="form-request__btn-close">
+        <img height="23" width="23" src="./src/assets/icons/close.svg" alt="Close side menu" />
+      </button>
+      <div class="form-request__info">
+        <h3 class="form-request__title coop">Станьте партнером <span class="form-request__title coop orange">DOMIKTUT</span></h3>
+        <span class="form-request__subtitle">Доверьте управление вашей недвижимостью
+          профессионалам. Мы превращаем уютные
+          дома в эксклюзивные направления для
+          отдыха, обеспечивая полный цикл сервиса и
+          стабильный доход.</span>
+      </div>
+      <form class="form-request__form">
+        <div class="form-request__row">
+          <label class="form-request__label">
+            Имя
+            <input class="form-request__input" type="text" placeholder="Андрей">
+          </label>
+        </div>
+        <div class="form-request__row">
+          <label class="form-request__label">
+            Телефон
+            <input class="form-request__input" type="tel" placeholder="+7 (900) 000-00-00">
+          </label>
+        </div>
+        <div class="form-request__row">
+          <label class="form-request__label">
+            Ссылка на дом
+            <input class="form-request__input" type="text" placeholder="Циан, Авито или сайт объекта">
+          </label>
+        </div>
+        <button class="form-request__btn">Отправить запрос</button>
+        <div class="form-request__footer">
+          <span class="form-request__text">Нажимая кнопку, вы соглашаетесь с политикой
+            конфиденциальности.</span>
+        </div>
+      </form>
     </div>
   </div>
 
