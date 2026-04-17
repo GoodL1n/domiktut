@@ -11,6 +11,7 @@
 <body>
   <main>
     <div class="page-intro">
+
       <header class="header">
         <nav class="header__nav">
           <ul class="header__socials">
@@ -102,12 +103,14 @@
           </div>
         </div>
       </section>
-    </div>
 
-    <section aria-label="Бронирование">
-      <div class="booking"></div>
-    </section>
-
+      <section class="booking" aria-label="Бронирование">
+        <div id="hr-widget"></div>
+        <script type="module" src="https://homereserve.ru/widget.js"></script>
+        <script type="module">
+          window.homereserve.initWidgetSearch({ "token": "uTEuFN3s5k", "tag": "domiktut" })
+        </script>
+      </section>
     </div>
 
     <section class="about" aria-labelledby="about-heading">
@@ -365,7 +368,8 @@
         <img height="23" width="23" src="./src/assets/icons/close.svg" alt="Close side menu" />
       </button>
       <div class="form-request__info">
-        <h3 class="form-request__title coop">Станьте партнером <span class="form-request__title coop orange">DOMIKTUT</span></h3>
+        <h3 class="form-request__title coop">Станьте партнером <span
+            class="form-request__title coop orange">DOMIKTUT</span></h3>
         <span class="form-request__subtitle">Доверьте управление вашей недвижимостью
           профессионалам. Мы превращаем уютные
           дома в эксклюзивные направления для

@@ -130,6 +130,9 @@ body {
   background-size: auto, auto;
   height: 950px; // потом убрать
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   // max-height: 950px;
   // height: 100%;
 }
@@ -147,6 +150,9 @@ body {
   }
 }
 
+.booking {
+}
+
 @media (max-width: 768px) {
   .container {
     max-width: 350px;
@@ -159,5 +165,11 @@ body {
   .page-intro {
     // height: auto;
     min-height: 520px;
+  }
+
+  .booking {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
