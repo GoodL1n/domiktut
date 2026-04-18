@@ -113,8 +113,6 @@ questions.forEach((question) => {
 
     const answer = question.querySelector(".question__answer");
 
-    console.log(answer);
-
     answer?.classList.toggle("visisble");
   });
 });

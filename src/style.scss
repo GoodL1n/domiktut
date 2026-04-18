@@ -155,7 +155,7 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 350px;
+    max-width: 85%;
     &.questions {
       flex-direction: column;
       gap: 10px;
@@ -168,30 +168,11 @@ body {
   }
 
   .booking {
-    max-width: 350px;
+    max-width: 85%;
     width: 100%;
     margin: 0 auto;
   }
 }
 
 @media (max-width: 576px) {
-  .container {
-    max-width: 80%;
-
-    &.questions {
-      flex-direction: column;
-      gap: 10px;
-    }
-  }
-
-  .page-intro {
-    // height: auto;
-    min-height: 520px;
-  }
-
-  .booking {
-    max-width: 80%;
-    width: 100%;
-    margin: 0 auto;
-  }
 }

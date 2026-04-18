@@ -108,7 +108,7 @@
   .preview {
     flex-direction: column;
     gap: 81px;
-    max-width: 350px;
+    max-width: 85%;
   }
 
   .preview__column-left {
@@ -191,7 +191,4 @@
 }
 
 @media (max-width: 576px) {
-  .preview {
-    max-width: 80%;
-  }
 }
