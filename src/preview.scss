@@ -189,3 +189,9 @@
     line-height: 16px;
   }
 }
+
+@media (max-width: 576px) {
+  .preview {
+    max-width: 80%;
+  }
+}

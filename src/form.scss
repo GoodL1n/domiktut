@@ -237,7 +237,7 @@
   }
 }
 
-@media (max-height: 700px) {
+@media (max-width: 576px) {
   .form-request {
     &__container {
       padding: 20px;
@@ -292,7 +292,7 @@
 
     &__input {
       font-size: 14px;
-      height: 30px;
+      height: 35px;
 
       &.size {
         height: 50px;
