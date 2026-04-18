@@ -2,7 +2,6 @@
   &__nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     padding: 45px 60px;
   }
@@ -11,23 +10,31 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    flex: 1;
   }
 
-  &__social{
-    &-link{
+  &__logo {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
 
+  &__social {
+    &-link {
     }
   }
 
   &__phone {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    flex: 1;
     gap: 5px;
     color: #ffffff;
 
     &-number {
+      font-family: "Montserrat", sans-serif;
       font-size: 18px;
-      letter-spacing: 0%;
       vertical-align: middle;
       color: #ffffff;
     }
@@ -36,7 +43,7 @@
       display: none;
     }
 
-    &-icon{
+    &-icon {
       height: 20px;
     }
   }
@@ -50,6 +57,7 @@
   .header {
     &__nav {
       padding: 40px 40px 0 40px;
+      justify-content: space-between;
     }
 
     &__socials {
@@ -57,6 +65,7 @@
     }
 
     &__logo {
+      flex: none;
       width: 190px;
     }
 

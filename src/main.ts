@@ -31,14 +31,25 @@ closeHamburgerBtn?.addEventListener("click", (element) => {
 });
 
 const btnRequest = document.getElementById("btn-request");
+const btnRequest2 = document.getElementById("btn-request-2");
 const btnRequestCoop = document.getElementById("btn-request-coop");
 const btnRequestCoop2 = document.getElementById("btn-request-coop-2");
+const btnRequestCoop3 = document.getElementById("btn-request-coop-3");
 const formRequest = document.getElementById("form-request");
 const formCoop = document.getElementById("form-coop");
 const closeFormRequestCoopBtn = document.getElementById("form-coop__btn-close");
 const closeFormRequestBtn = document.getElementById("form-request__btn-close");
 
 btnRequest?.addEventListener("click", (element) => {
+  element.stopPropagation();
+
+  if (formRequest) {
+    formRequest.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  }
+});
+
+btnRequest2?.addEventListener("click", (element) => {
   element.stopPropagation();
 
   if (formRequest) {
@@ -65,6 +76,15 @@ btnRequestCoop2?.addEventListener("click", (element) => {
   }
 });
 
+btnRequestCoop3?.addEventListener("click", (element) => {
+  element.stopPropagation();
+
+  if (formCoop) {
+    formCoop.style.display = "flex";
+    document.body.style.overflow = "hidden";
+  }
+});
+
 closeFormRequestBtn?.addEventListener("click", (element) => {
   element.stopPropagation();
 
@@ -83,4 +103,18 @@ closeFormRequestCoopBtn?.addEventListener("click", (element) => {
   }
 
   document.body.style.overflow = "";
+});
+
+const questions = Array.from(document.querySelectorAll(".question"));
+
+questions.forEach((question) => {
+  question.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    const answer = question.querySelector(".question__answer");
+
+    console.log(answer);
+
+    answer?.classList.toggle("visisble");
+  });
 });

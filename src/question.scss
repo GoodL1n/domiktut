@@ -63,11 +63,15 @@
 
   &__answer {
     display: none;
+
+    &.visisble{
+      display: flex;
+    }
   }
 
-  &__container:has(&__icon:hover) &__answer {
-    display: flex;
-  }
+  // &__container:has(&__icon:hover) &__answer {
+  //   display: flex;
+  // }
 
   &__title {
     font-family: Montserrat Alternates;
@@ -88,6 +92,11 @@
     line-height: 29.25px;
     letter-spacing: 0px;
     vertical-align: middle;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -134,6 +143,11 @@
     &__answer {
       font-size: 15px;
       line-height: 15px;
+    }
+
+    &__icon {
+      width: 25px;
+      height: 25px;
     }
   }
 }

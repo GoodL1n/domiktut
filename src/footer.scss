@@ -18,7 +18,6 @@
     &-text {
       font-family: Plus Jakarta Sans;
       font-weight: 400;
-      font-style: Regular;
       font-size: 12px;
       line-height: 16px;
       letter-spacing: 1.2px;
@@ -26,6 +25,46 @@
       text-transform: uppercase;
       color: #a5abb8;
     }
+  }
+
+  &__btns {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding-top: 16px;
+  }
+
+  &__btn {
+    background-color: #282c36;
+    border-radius: 9999px;
+    padding: 12px 24px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #e4e5ee;
+
+    &.orange {
+      background-color: #ff8f6f;
+      color: #5c1400;
+    }
+  }
+
+  &__text {
+    padding-top: 32px;
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #a5abb8;
+    opacity: 0.5;
   }
 }
 
@@ -38,6 +77,21 @@
       &-text {
         font-size: 10px;
       }
+    }
+
+    &__btns {
+      gap: 12px;
+      padding-top: 0;
+    }
+
+    &__btn {
+      padding: 8px 18px;
+      font-size: 8px;
+      line-height: 12px;
+    }
+
+    &__text {
+      padding-top: 0;
     }
   }
 }
