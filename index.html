@@ -108,7 +108,11 @@
         <div id="hr-widget"></div>
         <script type="module" src="https://homereserve.ru/widget.js"></script>
         <script type="module">
-          window.homereserve.initWidgetSearch({ "token": "uTEuFN3s5k", "tag": "domiktut" })
+          if (window.homereserve?.initWidgetSearch) {
+            window.homereserve.initWidgetSearch({ token: "uTEuFN3s5k", tag: "domiktut" });
+          } else {
+            console.error("homereserve widget не инициализирован");
+          }
         </script>
       </section>
     </div>
