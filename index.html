@@ -108,11 +108,30 @@
         <div id="hr-widget"></div>
         <script type="module" src="https://homereserve.ru/widget.js"></script>
         <script type="module">
-          if (window.homereserve?.initWidgetSearch) {
-            window.homereserve.initWidgetSearch({ token: "uTEuFN3s5k", tag: "domiktut" });
-          } else {
-            console.error("homereserve widget не инициализирован");
-          }
+          const waitForHomereserve = (timeoutMs = 5000, intervalMs = 100) =>
+            new Promise((resolve, reject) => {
+              const start = Date.now();
+              const timer = setInterval(() => {
+                if (window.homereserve?.initWidgetSearch) {
+                  clearInterval(timer);
+                  resolve(window.homereserve);
+                  return;
+                }
+
+                if (Date.now() - start > timeoutMs) {
+                  clearInterval(timer);
+                  reject(new Error("homereserve widget не инициализирован"));
+                }
+              }, intervalMs);
+            });
+
+          waitForHomereserve()
+            .then((homereserve) => {
+              homereserve.initWidgetSearch({ token: "uTEuFN3s5k", tag: "domiktut" });
+            })
+            .catch((error) => {
+              console.error(error.message);
+            });
         </script>
       </section>
     </div>
