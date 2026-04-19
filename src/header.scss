@@ -13,7 +13,7 @@
     flex: 1;
   }
 
-  &__logo {
+  &__logo-domik {
     display: flex;
     justify-content: center;
     flex: 1;
@@ -21,6 +21,17 @@
 
   &__social {
     &-link {
+      svg {
+        width: 20px;
+        height: 20px;
+
+        transition: all 0.3s ease;
+
+        &:hover {
+          fill: #ff7850;
+          color: #ff7850;
+        }
+      }
     }
   }
 
@@ -31,6 +42,7 @@
     flex: 1;
     gap: 5px;
     color: #ffffff;
+    cursor: pointer;
 
     &-number {
       font-family: "Montserrat", sans-serif;
@@ -38,6 +50,22 @@
       font-weight: 500;
       vertical-align: middle;
       color: #ffffff;
+      transition: all 0.3s ease;
+    }
+
+    svg {
+      width: 20px;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      .header__phone-number {
+        color: #ff7850;
+      }
+
+      svg {
+        fill: #ff7850;
+      }
     }
 
     &-link {
@@ -51,6 +79,14 @@
 
   &__hamburger-btn {
     display: none;
+  }
+}
+
+@media (max-width: 1280px) {
+  .header {
+    &__nav {
+      padding: 25px 50px;
+    }
   }
 }
 

@@ -23,6 +23,7 @@
       letter-spacing: 1.2px;
       vertical-align: middle;
       text-transform: uppercase;
+      white-space: nowrap;
       color: #a5abb8;
     }
   }
@@ -50,7 +51,9 @@
 
     &.orange {
       background-color: #ff8f6f;
-      color: #5c1400;
+      a {
+        color: #5c1400;
+      }
     }
   }
 

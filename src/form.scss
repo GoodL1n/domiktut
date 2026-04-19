@@ -1,3 +1,14 @@
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-image: url("./assets/icons/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+// input::placeholder,
+// textarea::placeholder {
+//   color: #a9abb3;
+// }
+
 .form-request {
   position: fixed;
   left: 0;
@@ -115,7 +126,7 @@
     max-width: 100%;
     min-width: 0;
     height: 56px;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     color: #e4e5ee;
@@ -150,7 +161,7 @@
   }
 
   &__text {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 10px;
     line-height: 150%;
     letter-spacing: 0.1em;
@@ -202,7 +213,7 @@
         font-size: 32px;
       }
     }
-    
+
     &__border {
       height: 3px;
     }
@@ -296,11 +307,13 @@
     }
 
     &__input {
-      font-size: 16px;
+      font-size: 14px;
       height: 35px;
 
       &.size {
         height: 50px;
+        padding: 10px;
+        font-size: 14px;
       }
     }
 
